@@ -1,0 +1,68 @@
+.navBar {
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: .2s all ease-in-out;
+  .container {
+    padding: 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      span {
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .navBarLogo {
+        height: 80px;
+        width: 160px;
+        margin-right: 30px;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      span {
+        font-size: 20px;
+      }
+      .icons {
+        cursor: pointer;
+        font-size: 25px;
+      }
+      .rightImage {
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .profile {
+        .options {
+          display: none;
+        }
+        &:hover {
+          .options {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            gap: 15px;
+            background-color: grey;
+            padding: 20px;
+            right: 20px;
+            border-radius: 10px;
+            .option {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
